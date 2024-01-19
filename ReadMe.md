@@ -7,9 +7,9 @@
 
 The Cypher System GPT Foundry module gives you direct access to an AI assistant that knows all the rules from the Cypher System SRD. You can Chat with it to get direct answers. Or select from some predefined Quick Prompts for Adventure Seeds or GM Intrustions! There’s even a fast Character Generator that you can quickly import directly into your game!
 
-This is being powered by OpenAI’s GPT and our (Lost Compress Press)[https://lostcompanypress.com] servers. We’re in beta and looking forward to your feedback and suggestions, but it works great right now.
+This is being powered by OpenAI’s GPT and our [Lost Compress Press](https://lostcompanypress.com) servers. We’re in beta and looking forward to your feedback and suggestions, but it works great right now.
 
-While Cpyher System GPT is in beta, it’s free to use. This may change depending on actively this module is being used and on how many people are willing to support (Lost Company Press on Ko-fi)[https://ko-fi.com/lostcompanypress].
+While Cpyher System GPT is in beta, it’s free to use. This may change depending on actively this module is being used and on how many people are willing to support [Lost Company Press on Ko-fi](https://ko-fi.com/lostcompanypress).
 
 ## Features
 
@@ -39,7 +39,7 @@ The Lost Compay Press website provides a search for the CSRD. With this feature,
 
 ## License
 
-This product is an independent production and is not affiliated with Monte Cook Games, LLC. It is published under the Cypher System Open License, found at (http://csol.montecookgames.com)[http://csol.montecookgames.com].
+This product is an independent production and is not affiliated with Monte Cook Games, LLC. It is published under the Cypher System Open License, found at [http://csol.montecookgames.com](http://csol.montecookgames.com).
 
 CYPHER SYSTEM and its logo are trademarks of Monte Cook Games, LLC in the U.S.A. and other countries. All Monte Cook Games characters and character names, and the distinctive likenesses thereof, are trademarks of Monte Cook Games, LLC.
 
@@ -47,7 +47,7 @@ CYPHER SYSTEM and its logo are trademarks of Monte Cook Games, LLC in the U.S.A.
 
 ### Support for the AI Chat and Content
 
-The server where all the content is generated is hosted by Lost Compress Press. Please consider supporting them on (Ko-fi)[https://ko-fi.com/lostcompanypress] to cover the server costs.
+The server where all the content is generated is hosted by Lost Compress Press. Please consider supporting them on [Ko-fi](https://ko-fi.com/lostcompanypress) to cover the server costs.
 
 ### Support for the Foundry Implementation
 
