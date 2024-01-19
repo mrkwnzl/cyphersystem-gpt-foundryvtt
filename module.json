@@ -1,0 +1,58 @@
+{
+  "id": "cyphersystem-gpt",
+  "title": "Cypher System GPT",
+  "version": "0.1.0",
+  "url": "https://github.com/mrkwnzl/cyphersystem-gpt-foundryvtt",
+  "manifest": "https://raw.githubusercontent.com/mrkwnzl/cyphersystem-gpt-foundryvtt/main/module.json",
+  "download": "https://github.com/mrkwnzl/cyphersystem-gpt-foundryvtt/releases/download/v0.1.0/release.zip",
+  "esmodules": [
+    "module/cyphersystem-gpt.js"
+  ],
+  "styles": [
+    "css/cyphersystem-gpt.css"
+  ],
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.315"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "cyphersystem",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Marko Wenzel",
+      "discord": "mrkwnzl",
+      "flags": {}
+    },
+    {
+      "name": "Dave Kloba",
+      "discord": "bytemfg",
+      "url": "https://lostcompanypress.com/",
+      "flags": {}
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "json",
+        "js",
+        "html"
+      ]
+    },
+    "key": "Sk41RnFPTmJqa0pHVHhLNE9ZMzdBaTM2YkMwQXd6cFc4d3RaYUVuNWNRNXRqZng0cm1BWlJzWm90b2NoT25RZw=="
+  }
+}

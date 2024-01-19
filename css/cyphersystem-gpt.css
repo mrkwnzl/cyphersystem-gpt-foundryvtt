@@ -1,0 +1,237 @@
+.cyphersystem-gpt html,
+.cyphersystem-gpt body,
+.cyphersystem-gpt form {
+  height: 100%;
+}
+
+.cyphersystem-gpt .window-content {
+  background: unset;
+  overflow: hidden;
+}
+
+.cyphersystem-gpt.sheet {
+  border: 1px solid var(--color-border-dark-1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  min-width: 512px;
+  min-height: 544px;
+}
+
+.cyphersystem-gpt .sheet-header,
+.cyphersystem-gpt .sheet-body,
+.cyphersystem-gpt .sheet-footer {
+  text-shadow: 1px 1px 4px var(--color-shadow-dark);
+  color: var(--color-text-light-highlight);
+}
+
+.cyphersystem-gpt .sheet-header {
+  height: auto;
+}
+
+.cyphersystem-gpt .sheet-footer {
+  height: auto;
+}
+
+.cyphersystem-gpt .sheet-body {
+  height: calc(100% - 172px);
+  overflow-y: hidden;
+  margin: 5px 0 0 0;
+}
+
+.cyphersystem-gpt nav.sheet-tabs {
+  margin: 0 0 5px 0;
+  padding: 4px 0;
+  color: var(--color-text-light-highlight);
+  text-shadow: 1px 1px 4px var(--color-shadow-dark);
+  font-size: 1em;
+}
+
+.cyphersystem-gpt h1,
+.cyphersystem-gpt h2,
+.cyphersystem-gpt h3 {
+  border-color: var(--color-text-light-highlight);
+}
+
+.cyphersystem-gpt .full-width {
+  width: 100%;
+  text-align: center;
+}
+
+.cyphersystem-gpt .genre,
+.cyphersystem-gpt .type,
+.cyphersystem-gpt .scope {
+  width: 100%;
+  text-align: center;
+}
+
+.cyphersystem-gpt .border {
+  border: 1px solid #BBB;
+  border-radius: 3px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.cyphersystem-gpt .border.generator {
+  height: 46px;
+  align-items: center;
+  display: grid;
+}
+
+.cyphersystem-gpt nav.sheet-tabs a.active {
+  color: var(--color-border-highlight);
+  font-weight: bold;
+}
+
+.cyphersystem-gpt .label-quick {
+  font-weight: bold;
+  flex: 0 1 auto;
+}
+
+.cyphersystem-gpt .prompt-input,
+.cyphersystem-gpt .search-input {
+  font-size: 1em;
+  color: var(--color-text-light-highlight);
+  text-shadow: 1px 1px 4px var(--color-shadow-dark);
+  border: 1px solid #BBB;
+  margin: 0 0 5px 0;
+  resize: none;
+  font-family: 'Signika';
+}
+
+.cyphersystem-gpt .prompt-input {
+  height: 97px;
+}
+
+.cyphersystem-gpt .search-input {
+  min-height: 46px;
+  height: 46px;
+}
+
+.cyphersystem-gpt .prompt-input:focus,
+.cyphersystem-gpt .prompt-output:focus,
+.cyphersystem-gpt .search-input:focus {
+  box-shadow: none;
+}
+
+.cyphersystem-gpt .prompt-random,
+.cyphersystem-gpt .prompt-submit,
+.cyphersystem-gpt .generator-submit,
+.cyphersystem-gpt .generator-import,
+.cyphersystem-gpt .search-submit,
+.cyphersystem-gpt .search-import {
+  flex: 0 1 auto;
+}
+
+.cyphersystem-gpt .quick-submit {
+  flex: 0 1 auto;
+  justify-content: flex-end;
+}
+
+.cyphersystem-gpt .flex-end {
+  justify-content: flex-end;
+}
+
+.cyphersystem-gpt .prompt-buttons-chat,
+.cyphersystem-gpt .prompt-buttons-generator {
+  padding: 0 2px 0 2px;
+  justify-content: space-between;
+}
+
+.cyphersystem-gpt .prompt-buttons-quick,
+.cyphersystem-gpt .prompt-buttons-search {
+  padding: 0 2px 0 2px;
+  justify-content: flex-end;
+}
+
+
+.cyphersystem-gpt .prompt-output {
+  color: var(--color-text-light-highlight);
+  border: 1px solid #BBB;
+  border-radius: 3px;
+  padding: 5px;
+  height: 100%;
+  overflow-y: auto;
+  font-family: 'Signika';
+  font-size: 1em;
+  resize: none;
+}
+
+.cyphersystem-gpt .prompt-output p:first-child {
+  margin-top: 0px;
+}
+
+.cyphersystem-gpt .prompt-output p:last-child {
+  margin-bottom: 0px;
+}
+
+.cyphersystem-gpt .output-placeholder {
+  color: var(--color-text-dark-inactive);
+}
+
+.cyphersystem-gpt .powered-by {
+  font-size: 0.8em;
+  color: var(--color-text-light);
+  margin: 5px 0 0 0;
+}
+
+.cyphersystem-gpt .window-resizable-handle {
+  right: -1px;
+}
+
+.cyphersystem-gpt a.disabled,
+.cyphersystem-gpt label.disabled,
+.cyphersystem-gpt label.disabled:hover {
+  pointer-events: none;
+  cursor: default;
+  color: var(--color-text-dark-inactive);
+}
+
+@keyframes dotPulse {
+  0% {
+    content: '';
+  }
+
+  25% {
+    content: '.';
+  }
+
+  50% {
+    content: '..';
+  }
+
+  75% {
+    content: '...';
+  }
+
+  100% {
+    content: '';
+  }
+}
+
+.cyphersystem-gpt .dot-animation::after {
+  content: '';
+  animation: dotPulse 3s infinite;
+}
+
+.cyphersystem-gpt input[type="radio"] {
+  display: none;
+}
+
+.cyphersystem-gpt input[type="radio"] + label {
+  border: none;
+  white-space: nowrap;
+}
+
+.cyphersystem-gpt input[type="radio"] + label {
+  border: none;
+  white-space: nowrap;
+}
+
+.cyphersystem-gpt input[type="radio"] + label:hover {
+  cursor: pointer;
+  text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+
+.cyphersystem-gpt input[type="radio"]:checked + label {
+  color: var(--color-border-highlight);
+}

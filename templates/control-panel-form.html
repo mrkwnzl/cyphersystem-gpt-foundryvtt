@@ -1,0 +1,264 @@
+<form class="" autocomplete="off">
+
+  {{!-- Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <div class="full-width"><a class="navTab" data-tab="chat" id="nav-chat">{{localize "CYPHERSYSTEM-GPT.Chat"}}</a></div>
+    <div class="full-width"><a class="navTab" data-tab="quick" id="nav-quick">{{localize "CYPHERSYSTEM-GPT.QuickPrompt"}}</a></div>
+    <div class="full-width"><a class="navTab" data-tab="generator" id="nav-generator">{{localize "CYPHERSYSTEM-GPT.Generator"}}</a></div>
+    <div class="full-width"><a class="navTab" data-tab="search" id="nav-search">{{localize "CYPHERSYSTEM-GPT.Search"}}</a></div>
+  </nav>
+
+  {{!-- Header --}}
+  <section class="tabs-content">
+
+    {{!-- Chat --}}
+    <div class="tab sheet-header chat" data-group="primary" data-tab="chat">
+
+      {{!-- Textarea --}}
+      <div class="flexrow">
+        <textarea class="prompt-input" name="prompt-input" id="prompt-input" type="text" value="" placeholder="{{localize 'CYPHERSYSTEM-GPT.Prompt'}}" autofocus></textarea>
+      </div>
+
+      {{!-- Buttons --}}
+      <div class="flexrow prompt-buttons-chat">
+        <a class="prompt-random" id="prompt-random" title="{{localize 'CYPHERSYSTEM-GPT.RandomPrompt'}}">
+          <i class="fa-solid fa-shuffle"></i> {{localize "CYPHERSYSTEM-GPT.RandomPrompt"}}
+        </a>
+        <a class="prompt-submit" id="prompt-submit" title="{{localize 'CYPHERSYSTEM-GPT.SubmitTooltip'}}">
+          <i class="fa-solid fa-terminal"></i> {{localize "CYPHERSYSTEM-GPT.SubmitPrompt"}}
+        </a>
+      </div>
+    </div>
+
+    {{!-- Quick Prompt --}}
+    <div class="tab sheet-header quick" data-group="primary" data-tab="quick">
+
+      {{!-- Genres --}}
+      <div class="border">
+        <div class="flexrow">
+          <div class="genre">
+            <input type="radio" id="fantasy-quick" name="genre-quick" value="fantasy" checked>
+            <label class="radio-label" for="fantasy-quick">{{localize "CYPHERSYSTEM-GPT.Fantasy"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="modern-quick" name="genre-quick" value="modern">
+            <label class="radio-label" for="modern-quick">{{localize "CYPHERSYSTEM-GPT.Modern"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="modern_supernatural-quick" name="genre-quick" value="modern supernatural">
+            <label class="radio-label" for="modern_supernatural-quick">{{localize "CYPHERSYSTEM-GPT.ModernSupernatural"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="sci-fi-quick" name="genre-quick" value="sci-fi">
+            <label class="radio-label" for="sci-fi-quick">{{localize "CYPHERSYSTEM-GPT.SciFi"}}</label>
+          </div>
+        </div>
+        <div class="flexrow">
+          <div class="genre">
+            <input type="radio" id="superhero-quick" name="genre-quick" value="superhero">
+            <label class="radio-label" for="superhero-quick">{{localize "CYPHERSYSTEM-GPT.Superhero"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="post_apocalyptic-quick" name="genre-quick" value="post apocalyptic">
+            <label class="radio-label" for="post_apocalyptic-quick">{{localize "CYPHERSYSTEM-GPT.PostApocalyptic"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="historical-quick" name="genre-quick" value="historical">
+            <label class="radio-label" for="historical-quick">{{localize "CYPHERSYSTEM-GPT.Historical"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="fairytale-quick" name="genre-quick" value="fairytale">
+            <label class="radio-label" for="fairytale-quick">{{localize "CYPHERSYSTEM-GPT.Fairytale"}}</label>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Things --}}
+      <div class="border">
+        <div class="flexrow">
+          <div class="type">
+            <input type="radio" id="pc-sentences-quick" name="thing-quick" value="pc sentences" checked>
+            <label class="radio-label" for="pc-sentences-quick">{{localize "CYPHERSYSTEM-GPT.PCSentences"}}</label>
+          </div>
+          <div class="type">
+            <input type="radio" id="npcs-quick" name="thing-quick" value="npcs">
+            <label class="radio-label" for="npcs-quick">{{localize "CYPHERSYSTEM-GPT.NPCs"}}</label>
+          </div>
+          <div class="type">
+            <input type="radio" id="creatures-quick" name="thing-quick" value="creatures">
+            <label class="radio-label" for="creatures-quick">{{localize "CYPHERSYSTEM-GPT.Creatures"}}</label>
+          </div>
+          <div class="type">
+            <input type="radio" id="gmis-quick" name="thing-quick" value="gm intrusions">
+            <label class="radio-label" for="gmis-quick">{{localize "CYPHERSYSTEM-GPT.GMIs"}}</label>
+          </div>
+        </div>
+        <div class="flexrow">
+          <div class="type">
+            <input type="radio" id="cyphers-quick" name="thing-quick" value="cyphers">
+            <label class="radio-label" for="cyphers-quick">{{localize "CYPHERSYSTEM-GPT.Cyphers"}}</label>
+          </div>
+          <div class="type">
+            <input type="radio" id="artifacts-quick" name="thing-quick" value="artifacts">
+            <label class="radio-label" for="artifacts-quick">{{localize "CYPHERSYSTEM-GPT.Artifacts"}}</label>
+          </div>
+          <div class="type">
+            <input type="radio" id="locations-quick" name="thing-quick" value="locations">
+            <label class="radio-label" for="locations-quick">{{localize "CYPHERSYSTEM-GPT.Locations"}}</label>
+          </div>
+          <div class="type">
+            <input type="radio" id="adventure-seeds-quick" name="thing-quick" value="adventure seeds">
+            <label class="radio-label" for="adventure-seeds-quick">{{localize "CYPHERSYSTEM-GPT.AdventureSeeds"}}</label>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Buttons --}}
+      <div class="flexrow prompt-buttons-quick">
+        <a class="quick-submit" id="quick-submit" title="{{localize 'CYPHERSYSTEM-GPT.SubmitQuickTooltip'}}">
+          <i class="fa-solid fa-terminal"></i> {{localize "CYPHERSYSTEM-GPT.SubmitPrompt"}}
+        </a>
+      </div>
+    </div>
+
+    {{!-- Generator --}}
+    <div class="tab sheet-header generator" data-group="primary" data-tab="generator">
+
+      {{!-- Genres --}}
+      <div class="border">
+        <div class="flexrow">
+          <div class="genre">
+            <input type="radio" id="fantasy-generator" name="genre-generator" value="fantasy" checked>
+            <label class="radio-label" for="fantasy-generator">{{localize "CYPHERSYSTEM-GPT.Fantasy"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="modern-generator" name="genre-generator" value="modern">
+            <label class="radio-label" for="modern-generator">{{localize "CYPHERSYSTEM-GPT.Modern"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="modern_supernatural-generator" name="genre-generator" value="modern_supernatural">
+            <label class="radio-label" for="modern_supernatural-generator">{{localize "CYPHERSYSTEM-GPT.ModernSupernatural"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="sci-fi-generator" name="genre-generator" value="sci-fi">
+            <label class="radio-label" for="sci-fi-generator">{{localize "CYPHERSYSTEM-GPT.SciFi"}}</label>
+          </div>
+        </div>
+        <div class="flexrow">
+          <div class="genre">
+            <input type="radio" id="superhero-generator" name="genre-generator" value="superhero">
+            <label class="radio-label" for="superhero-generator">{{localize "CYPHERSYSTEM-GPT.Superhero"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="post_apocalyptic-generator" name="genre-generator" value="post_apocalyptic">
+            <label class="radio-label" for="post_apocalyptic-generator">{{localize "CYPHERSYSTEM-GPT.PostApocalyptic"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="historical-generator" name="genre-generator" value="historical">
+            <label class="radio-label" for="historical-generator">{{localize "CYPHERSYSTEM-GPT.Historical"}}</label>
+          </div>
+          <div class="genre">
+            <input type="radio" id="fairytale-generator" name="genre-generator" value="fairytale">
+            <label class="radio-label" for="fairytale-generator">{{localize "CYPHERSYSTEM-GPT.Fairytale"}}</label>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Things --}}
+      <div class="border generator">
+        <div class="flexrow">
+          <div class="type">
+            <input type="radio" id="pc-generator" name="thing-generator" value="character" checked>
+            <label class="radio-label" for="pc-generator">{{localize "CYPHERSYSTEM-GPT.PC"}}</label>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Buttons --}}
+      <div class="flexrow prompt-buttons-generator">
+        <a class="generator-import disabled" id="generator-import" title="{{localize 'CYPHERSYSTEM-GPT.Import'}}">
+          <i class="fa-solid fa-download"></i> {{localize "CYPHERSYSTEM-GPT.Import"}}
+        </a>
+        <a class="generator-submit" id="generator-submit" title="{{localize 'CYPHERSYSTEM-GPT.SubmitGenertorTooltip'}}">
+          <i class="fa-solid fa-file-circle-plus"></i> {{localize "CYPHERSYSTEM-GPT.SubmitGenerator"}}
+        </a>
+      </div>
+    </div>
+
+    {{!-- Search --}}
+    <div class="tab sheet-header search" data-group="primary" data-tab="search">
+
+      {{!-- Search Scopes --}}
+      <div class="border">
+        <div class="flexrow">
+          <div class="scope">
+            <input type="radio" id="any-search" name="search" value="any" checked>
+            <label class="radio-label search" for="any-search">{{localize "CYPHERSYSTEM-GPT.Anything"}}</label>
+          </div>
+          <div class="scope">
+            <input type="radio" id="rule-search" name="search" value="rule">
+            <label class="radio-label search" for="rule-search">{{localize "CYPHERSYSTEM-GPT.Rules"}}</label>
+          </div>
+          <div class="scope">
+            <input type="radio" id="creature-search" name="search" value="creature">
+            <label class="radio-label search" for="creature-search">{{localize "CYPHERSYSTEM-GPT.Creatures"}}</label>
+          </div>
+          <div class="scope">
+            <input type="radio" id="cypher-search" name="search" value="cypher">
+            <label class="radio-label search" for="cypher-search">{{localize "CYPHERSYSTEM-GPT.Cyphers"}}</label>
+          </div>
+          <div class="scope">
+            <input type="radio" id="artifact-search" name="search" value="artifact">
+            <label class="radio-label search" for="artifact-search">{{localize "CYPHERSYSTEM-GPT.Artifacts"}}</label>
+          </div>
+        </div>
+        <div class="flexrow">
+          <div class="scope"></div>
+          <div class="scope">
+            <input type="radio" id="ability-search" name="search" value="ability">
+            <label class="radio-label search" for="ability-search">{{localize "CYPHERSYSTEM-GPT.Abilities"}}</label>
+          </div>
+          <div class="scope">
+            <input type="radio" id="descriptor-search" name="search" value="descriptor">
+            <label class="radio-label search" for="descriptor-search">{{localize "CYPHERSYSTEM-GPT.Descriptors"}}</label>
+          </div>
+          <div class="scope">
+            <input type="radio" id="focus" name="search" value="focus">
+            <label class="radio-label search" for="focus">{{localize "CYPHERSYSTEM-GPT.Foci"}}</label>
+          </div>
+          <div class="scope">
+            <input type="radio" id="flavor-search" name="search" value="flavor">
+            <label class="radio-label search" for="flavor-search">{{localize "CYPHERSYSTEM-GPT.Flavors"}}</label>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Search Input --}}
+      <div class="flexrow">
+        <textarea class="search-input" name="search-input" id="search-input" type="text" value="" placeholder="{{localize 'CYPHERSYSTEM-GPT.SearchPlaceholder'}}"></textarea>
+      </div>
+
+      {{!-- Buttons --}}
+      <div class="flexrow prompt-buttons-search">
+        <a class="search-submit" id="search-submit" title="{{localize 'CYPHERSYSTEM-GPT.SearchTooltip'}}">
+          <i class="fa-solid fa-magnifying-glass"></i> {{localize "CYPHERSYSTEM-GPT.Search"}}
+        </a>
+      </div>
+
+  </section>
+
+  {{!-- Output --}}
+  <div class="sheet-body">
+    <div class="prompt-output" id="prompt-output" contenteditable="false">
+      <p class="output-placeholder">{{localize "CYPHERSYSTEM-GPT.Output"}}</p>
+    </div>
+  </div>
+
+  {{!-- Footer --}}
+  <div class="sheet-footer">
+    <div class="flexrow">
+      <p class="powered-by">{{localize "CYPHERSYSTEM-GPT.PoweredBy"}} <a href="https://lostcompanypress.com">Lost Company Press</a> | <a href="https://ko-fi.com/lostcompanypress">Ko-fi</a> | <a href="https://www.lostcompanypress.com/foundry_help_v1">{{localize "CYPHERSYSTEM-GPT.LCPFoundryHelp"}}</a></p>
+    </div>
+  </div>
+
+</form>
