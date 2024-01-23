@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [0.2.0] - 2024-01-23
 ### Added
-- New seting to control the opacity of the GPT window.
+- New (client-side) setting to control the opacity of the GPT window.
 
 ### Fixed
 - Text of the output can now be selected and copied.
