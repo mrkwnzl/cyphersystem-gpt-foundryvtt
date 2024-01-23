@@ -350,16 +350,28 @@ export async function cypherGPTForm() {
   // Create cypherGPTForm
   let cypherGPTForm = Object.values(ui.windows).find((app) => app instanceof CypherGPTSheet) || new CypherGPTSheet();
 
+  // Set opacity
+  setOpacity();
+
   // Render sheet
   cypherGPTForm.render(true);
 }
 
 // This is used to check whether a GMI Range for is already there and re-render it when it is
 export async function renderCypherGPTForm() {
+  console.log("Cypher System GPT | renderCypherGPTForm");
   let cypherGPTForm = Object.values(ui.windows).find((app) => app instanceof CypherGPTSheet);
 
-  console.log(cypherGPTForm);
   if (cypherGPTForm) {
     cypherGPTForm.render(true, {focus: false});
+  }
+}
+
+export async function setOpacity() {
+  // Set opacity
+  let opacitySetting = game.settings.get("cyphersystem-gpt", "sheetOpacity");
+  if (opacitySetting > 0) {
+    let opacity = opacitySetting / 4;
+    document.documentElement.style.setProperty('--background-opacity', `rgb(0, 0, 0, ${opacity})`);
   }
 }

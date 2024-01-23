@@ -48,6 +48,13 @@
     "Foci": "Foci",
     "Flavors": "Flavors",
     "Abilities": "Abilities",
-    "SearchPlaceholder": "Search"
+    "SearchPlaceholder": "Search",
+    "SheetOpacity": "Sheet Opacity",
+    "SheetOpacityHint": "Set the opacity of the GPT sheet. Default is fully transparent, 100% is fully opaque.",
+    "SheetOpacityDefault": "Default",
+    "SheetOpacity25%": "25%",
+    "SheetOpacity50%": "50%",
+    "SheetOpacity75%": "75%",
+    "SheetOpacity100%": "100%"
   }
 }

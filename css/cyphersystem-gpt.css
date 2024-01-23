@@ -1,3 +1,7 @@
+:root {
+  --background-opacity: rgb(0, 0, 0, 0);
+}
+
 .cyphersystem-gpt html,
 .cyphersystem-gpt body,
 .cyphersystem-gpt form {
@@ -6,6 +10,8 @@
 
 .cyphersystem-gpt .window-content {
   background: unset;
+  background-color: var(--background-opacity);
+  border-radius: 0 0 0 5px;
   overflow: hidden;
 }
 
@@ -50,6 +56,10 @@
 .cyphersystem-gpt h2,
 .cyphersystem-gpt h3 {
   border-color: var(--color-text-light-highlight);
+}
+
+.cyphersystem-gpt .prompt-output * {
+  user-select: text;
 }
 
 .cyphersystem-gpt .full-width {
@@ -154,6 +164,7 @@
   font-family: 'Signika';
   font-size: 1em;
   resize: none;
+  user-select: text;
 }
 
 .cyphersystem-gpt .prompt-output p:first-child {

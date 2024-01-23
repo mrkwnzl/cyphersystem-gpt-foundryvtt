@@ -1,4 +1,4 @@
-import {cypherGPTForm} from "./control-panel-form.js";
+import {cypherGPTForm, renderCypherGPTForm, setOpacity} from "./control-panel-form.js";
 
 Hooks.on("init", async () => {
   // Register keybindings
@@ -16,6 +16,27 @@ Hooks.on("init", async () => {
       cypherGPTForm();
     },
     repeat: false
+  });
+
+  game.settings.register("cyphersystem-gpt", "sheetOpacity", {
+    name: game.i18n.localize("CYPHERSYSTEM-GPT.SheetOpacity"),
+    hint: game.i18n.localize("CYPHERSYSTEM-GPT.SheetOpacityHint"),
+    scope: "client",
+    type: Number,
+    default: 0,
+    choices: {
+      0: game.i18n.localize("CYPHERSYSTEM-GPT.SheetOpacityDefault"),
+      1: game.i18n.localize("CYPHERSYSTEM-GPT.SheetOpacity25%"),
+      2: game.i18n.localize("CYPHERSYSTEM-GPT.SheetOpacity50%"),
+      3: game.i18n.localize("CYPHERSYSTEM-GPT.SheetOpacity75%"),
+      4: game.i18n.localize("CYPHERSYSTEM-GPT.SheetOpacity100%")
+    },
+    config: true,
+    requiresReload: false,
+    onChange: () => {
+      setOpacity();
+      renderCypherGPTForm();
+    },
   });
 });
 
