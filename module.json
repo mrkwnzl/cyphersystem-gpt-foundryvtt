@@ -1,10 +1,10 @@
 {
   "id": "cyphersystem-gpt",
   "title": "Cypher System GPT",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "url": "https://github.com/mrkwnzl/cyphersystem-gpt-foundryvtt",
   "manifest": "https://raw.githubusercontent.com/mrkwnzl/cyphersystem-gpt-foundryvtt/main/module.json",
-  "download": "https://github.com/mrkwnzl/cyphersystem-gpt-foundryvtt/releases/download/v0.2.0/release.zip",
+  "download": "https://github.com/mrkwnzl/cyphersystem-gpt-foundryvtt/releases/download/v0.2.1/release.zip",
   "esmodules": [
     "module/cyphersystem-gpt.js"
   ],
@@ -13,7 +13,7 @@
   ],
   "compatibility": {
     "minimum": "11",
-    "verified": "11.315"
+    "verified": "12.238"
   },
   "relationships": {
     "systems": [
